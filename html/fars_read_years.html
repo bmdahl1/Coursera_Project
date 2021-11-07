@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Fars Read Years</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for fars_read_years {TestPackage}"><tr><td>fars_read_years {TestPackage}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Fars Read Years</h2>
+
+<h3>Description</h3>
+
+<p>This functions takes years as inputs and returns a list containing the year/month combinations
+found in the FAR files
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+fars_read_years(years)
+</pre>
+
+
+<h3>Details</h3>
+
+<p>The functions uses the Fars_Read/Make_Filename functions to take the year provided and create a
+list of the months/year combinations if found in the FAR files.
+</p>
+
+
+<h3>Value</h3>
+
+<p>This function returns a list of the year/month found in the FAR file based on the years provided. It will
+return an error if the year provided cannot be converted into an integer format or if the filename resulting from
+the years specified cannot be found in the directory.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+## Not run: 
+fars_read_years(2016)
+fars_read_years(c(2014,2013))
+
+## End(Not run)
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>TestPackage</em> version 0.0.0.9000 <a href="00Index.html">Index</a>]</div>
+</body></html>

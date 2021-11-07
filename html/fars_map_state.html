@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Fars Map States</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for fars_map_state {TestPackage}"><tr><td>fars_map_state {TestPackage}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Fars Map States</h2>
+
+<h3>Description</h3>
+
+<p>This functions takes a year and state number as inputs and returns a plot of the fatalities
+plotted on a graphic of the state.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+fars_map_state(state.num, year)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>state.num</code></td>
+<td>
+<p>a state number from 1 to 50 representing one of the states of the United States.</p>
+</td></tr>
+<tr valign="top"><td><code>year</code></td>
+<td>
+<p>a year in the format of &quot;yyyy&quot; (multiple years cannot be supplied to this funtion)</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>This function returns a plot of the state indicated with all fatalities plotted by latitude/longitude.
+An error will be return if an invalid state number is supplied, or the year supplied is not found in the
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+## Not run: 
+fars_map_state(25,2013)
+
+## End(Not run)
+
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>TestPackage</em> version 0.0.0.9000 <a href="00Index.html">Index</a>]</div>
+</body></html>

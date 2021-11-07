@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: Fars Summarize Years</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for fars_summarize_years {TestPackage}"><tr><td>fars_summarize_years {TestPackage}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>Fars Summarize Years</h2>
+
+<h3>Description</h3>
+
+<p>This functions takes years as inputs and returns a tbl_df/dataframe object totaling the number of fatalities
+per month for each year specified.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+fars_summarize_years(years)
+</pre>
+
+
+<h3>Details</h3>
+
+<p>The functions uses the fars_read, make_filename, fars_read_years functions.
+This function requires the following external package functions:
+</p>
+
+
+<h3>Value</h3>
+
+<p>This function returns a tbl_dataframe object totaling the number of fatalities per month for each year specified.
+An error will be returned if a year provided cannot be converted to integer format, or if no file corresponding to the
+year specified is found in the working directory.
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+## Not run: 
+fars_summarize_years(2016)
+fars_summarize_years(c(2014,2013))
+
+## End(Not run)
+</pre>
+
+<hr /><div style="text-align: center;">[Package <em>TestPackage</em> version 0.0.0.9000 <a href="00Index.html">Index</a>]</div>
+</body></html>
