@@ -17,7 +17,8 @@ Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
 Suggests: knitr, rmarkdown
 VignetteBuilder: knitr
-NeedsCompilation: no
+NeedsCompilation: yes
 Packaged: 2021-11-07 20:37:26 UTC; b1de
 Author: First Last [aut, cre] (<https://orcid.org/YOUR-ORCID-ID>)
 Maintainer: First Last <first.last@example.com>
+Built: R 3.6.0; ; 2021-11-07 20:39:04 UTC; windows
